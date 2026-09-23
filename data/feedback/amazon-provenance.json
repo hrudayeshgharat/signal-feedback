@@ -1,0 +1,47 @@
+{
+  "name": "Amazon reviews · All Beauty",
+  "dataset": "Amazon Reviews 2023 — McAuley Lab",
+  "category": "All_Beauty",
+  "sourcePage": "https://amazon-reviews-2023.github.io/",
+  "reviewSource": "https://mcauleylab.ucsd.edu/public_datasets/data/amazon_2023/raw/review_categories/All_Beauty.jsonl.gz",
+  "metadataSource": "https://mcauleylab.ucsd.edu/public_datasets/data/amazon_2023/raw/meta_categories/meta_All_Beauty.jsonl.gz",
+  "retrievedAt": "2026-09-23T04:50:28.951Z",
+  "sourceRowsScanned": 50361,
+  "eligiblePoolSize": 50000,
+  "defaultReviewCount": 120,
+  "defaultProductCount": 6,
+  "dateRange": [
+    "2014-01-17",
+    "2023-02-23"
+  ],
+  "selection": "First 50,000 eligible unique reviews in source order; six most-reviewed products in that pool; 20 per product selected by ascending SHA-256 of signal-v1:text:date. This convenience sample is not representative of the full category.",
+  "filters": "Non-empty review text up to 2,000 characters, product ID, timestamp, rating 1–5. HTML line breaks and common/numeric entities are normalized to readable text; simple formatting tags are removed. Exact duplicate product/text/date/rating records removed. No language detection was applied.",
+  "labels": "No reference sentiment labels. Star ratings are not ground truth and are not used as expected_sentiment.",
+  "productNames": [
+    {
+      "parent_asin": "B085BB7B1M",
+      "title": "Salux Nylon Japanese Beauty Skin Bath Wash Cloth/towel (3) Blue Yellow and Pink"
+    },
+    {
+      "parent_asin": "B0BM4GX6TT",
+      "title": "Godefroy Tint Kit for Spot Coloring, Dark Brown"
+    },
+    {
+      "parent_asin": "B00R1TAN7I",
+      "title": "GranNaturals Boar Bristle Smoothing Hair Brush for Women and Men - Medium/Soft Bristles - Natural Wooden Large Flat Square Paddle Hairbrush for Fine, Thin, Straight, Long, or Short Hair"
+    },
+    {
+      "parent_asin": "B07TK15BQQ",
+      "title": "R-NEU 200 Cotton Rounds, 100% Natural Turkish Cotton Makeup Remover and Facial Cleansing Cotton Round Pads, Waffle Textured Hypoallergenic Cotton Wipes, 2.25 Inch Diameter (200 Pack)"
+    },
+    {
+      "parent_asin": "B0107QYW14",
+      "title": "Harlorki Women's Bohemian Jewelry Statement Necklaces Women Rhinestone Gem Pendant Collar"
+    },
+    {
+      "parent_asin": "B01M1OFZOG",
+      "title": "Bed Head Curve Check Curling Wand for Tousled Waves and Texture, Jumbo Barrel"
+    }
+  ],
+  "privacy": "Reviewer IDs, images and profile fields are omitted."
+}
